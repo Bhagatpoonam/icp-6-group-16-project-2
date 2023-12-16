@@ -41,12 +41,16 @@
 
 .row{
     display: flex;
-    height: 88%;
+    flex-direction: column;
+    height: 45%;
     align-items: center;
 }
 .col{
     flex-basis: 50%;
+    margin-top: 100px;
     margin-left: 100px;
+    display: flex;
+    justify-content: space-evenly;
     
 }
 .bol{
@@ -76,14 +80,14 @@ button{
     
 }
 .card{
-    width: 200px;
-    height: 230px;
+    width: 240px;
+    height: 270px;
     display: inline-block;
     border-radius: 10px;
     padding: 15px 25px;
     box-sizing: border-box;
     cursor: pointer;
-    margin: 10px 15px;
+    margin: 10px 40px;
     background-position: center;
     background-size: cover;
     transition: transform 0.5s;
