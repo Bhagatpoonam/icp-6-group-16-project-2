@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        first page
+    </title>
+    <link rel="stylesheet" href="index.css">
+    <style type="text/css">
+        .sidebar {
+            height: 100vh;
+            background-color: #020210;
+            width: 150px;
+            position: fixed;
+            top: 0;
+            padding-top: 75px;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            opacity: 0.7;
+            background-position: center;
+            background-size: cover;
+            color: #ffffff;
+
+        }
+
+        .menu {
+            width: 100px;
+            text-align: center;
+            margin-top: 30px;
+            padding: 5px;
+            margin-left: 10px;
+            font-size: 20px;
+            background: none;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .menu:hover {
+            display: inline;
+            padding: 10px;
+            color: #999;
+            background: #999;
+            transition: 0.5sec;
+            box-shadow: 0 0 12px 6px rgb(42, 61, 72);
+            color: white;
+
+        }
+
+        .sidebar-closed {
+            left: -200px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <div class="container">
+
+            <div class="navbar">
+                <img src="./images/mountain.png" class="logo">
+
+                <img src="./images/menu.png" class="menu-icon" onclick="togglesidebae()">
+            </div>
+            <div class="row">
+                <div class="bol">
+                    <h1>India Tour</h1>
+                    <p>India has many tourist destinations for you to visit in summer across the country. You can go to
+                        the pristine beaches of Andaman, Goa or Kerala, visit holy places in the high peaks of
+                        Uttarakhand, romantic hill stations in India, and so on.
+                    </p>
+                    <button type="button"><a href="./pages/temple.html" class="explore-button">Explore</a></button>
+                </div>
+                <div class="col">
+                    <a href="./pages/temple.html">
+                        <div class="card card1">
+                            <h5>Indian Temple</h5>
+                            <p>There are various temples in india explore it and enjoy your tour with us</p>
+                        </div>
+                    </a>
+                    <a href="./pages/historic.html">
+                        <div class="card card2">
+                            <h5>Historical Place</h5>
+                            <p>There are various historical place in india explore it and enjoy your tour with us</p>
+                        </div>
+                    </a>
+                    <a href="./pages/hill-station.html">
+                        <div class="card card3">
+                            <h5>Hill Station</h5>
+                            <p>There are various hill station in india explore it and enjoy your tour with us</p>
+                        </div>
+                    </a>
+                    <a href="./pages/wild-life.html">
+                        <div class="card card4">
+                            <h5>Wild Life</h5>
+                            <p>There are various wild lifes in india explore it and enjoy your tour with us</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+
+            <div class="sidebar sidebar-closed" id="sidebar">
+
+                <a class="menu" href="./index.html">Home</a>
+                <a class="menu" href="./pages/book.html">Book Tour</a>
+                <a class="menu" href="./pages/aboutus.html">About</a>
+                <a class="menu" href="./pages/contactus.html">Contact</a>
+                <a class="menu" href="./pages/login.html">Sign In</a>
+
+            </div>
+            <footer class="footer-contact">
+                <div class="contact-container">
+                    <div class="footer-col">
+                        <div class="contact-row">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#" class="contact-footer-info">about us</a></li>
+                                <li><a href="#" class="contact-footer-info">our services</a></li>
+                                <li><a href="#" class="contact-footer-info">privacy policy</a></li>
+                                <li><a href="#" class="contact-footer-info">affiliate program</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact-container">
+                        <div class="footer-col">
+                            <div class="contact-row">
+                                <h4>Get Help</h4>
+                                <ul>
+                                    <li><a href="#" class="contact-footer-info">FAQ</a></li>
+                                    <li><a href="#" class="contact-footer-info">contact</a></li>
+                                    <li><a href="#" class="contact-footer-info">enquiry</a></li>
+                                    <li><a href="#" class="contact-footer-info">services</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contact-container">
+                            <div class="footer-col">
+                                <div class="contact-row">
+                                    <h4>About Us</h4>
+                                    <ul>
+                                        <li><a href="#" class="contact-footer-info">comapany name</a></li>
+                                        <li><a href="#" class="contact-footer-info">policies</a></li>
+                                        <li><a href="#" class="contact-footer-info">Details</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="contact-container">
+                                <div class="footer-col">
+                                    <div class="contact-row">
+                                        <h4>Follow Us</h4>
+                                        <ul>
+                                            <div class="social-link">
+                                                <img src="./images/facebook.png" class="img-contact">&nbsp;&nbsp;
+                                                <img src="./images/twitter.png" class="img-contact">&nbsp;&nbsp;
+                                                <img src="./images/whatsapp.png" class="img-contact">&nbsp;&nbsp;
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+
+            </footer>
+
+            <script>
+
+                let isOpen = false;
+                function togglesidebae() {
+                    const sidebar = document.getElementById('sidebar');
+                    if (isOpen) {
+                        sidebar.classList.add('sidebar-closed');
+                        isOpen = false;
+                    }
+                    else {
+                        sidebar.classList.remove('sidebar-closed');
+                        isOpen = true;
+                    }
+                }
+
+
+            </script>
+
+</body>
+
+</html>
