@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>about us</title>
+
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            width: 100%;
+            height: 100vh;
+            font-family: sans-serif;
+        }
+
+        .Section-top{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            background-image: url(./images/aboutus/beach1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            animation: change 10% infinite ease-in-out;
+        }
+
+        .content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+        }
+
+        .content a{
+            background: #85c1ee;
+            padding: 10px 24px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+
+        .content a:hover{
+            background: #034e88;
+            color: #fff;
+        }
+
+            @keyframes change{
+                0%
+                {
+                    background-image: url(./images/aboutus/beach.jpg);
+                }
+                20%
+                {
+                    background-image: url(./images/aboutus/hillstation1.jpg);
+                }
+                40%
+                {
+                    background-image: url(./images/aboutus/historicplace1.jpg);
+                }
+                60%
+                {
+                    background-image: url(./images/aboutus/taj-mahalimg.jpeg);
+                }
+                80%
+                {
+                    background-image: url(./images/aboutus/wildlife1.jpg);
+                }
+                100%
+                {
+                    background-image: url(./images/aboutus/beach.jpg);
+                }
+            }
+
+    </style>
+</head>
+
+<body>
+    <div class="Section-top">
+        <div class="content">
+            <h1>Abhout Us</h1>
+            <a href="#">Welcome</a>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+</body>
