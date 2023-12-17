@@ -44,41 +44,63 @@
     flex-direction: column;
     height: 45%;
     align-items: center;
+    
 }
 .col{
     flex-basis: 50%;
+    
     margin-top: 100px;
     margin-left: 100px;
     display: flex;
     justify-content: space-evenly;
     
 }
+
 .bol{
     flex-basis: 50%;
+    
 }
 h1{
     color: wheat;
     font-size: 100px;
+    
 }
 p{
     color: #fff;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 15px;
+    color: wheat;
+    
+
+}
+.p1{
+     color: bisque;
 
 }
 button{
     width: 180px;
     color: #000;
-    font-size: 12px;
+    font-size: 15px;
     padding: 12px 0;
-    background: #fff;
+    background:wheat;
     border: 0;
     border-radius: 20px;
     outline: none;
     margin-top: 30px;
     
-    
 }
+
+button:hover{
+
+        background: cyan;
+        box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+
+
+}
+
+
 .card{
     width: 240px;
     height: 270px;
@@ -113,6 +135,8 @@ button{
 h5{
     color: #fff;
     text-shadow: 0 0 5px #999;
+    color: black;
+    font-size: 18px;
 
 }
 .card p{
@@ -185,12 +209,15 @@ h2{
 .explore-button{
     text-decoration: none;
     font-size: 15px;
+
     color: #000;
 }
 .explore-button:hover
 {
    text-decoration: none;
+   font-size: 18px;
    box-shadow:0 0 5px 3px rgb(120, 118, 118);
+   
 }
 @media (max-width : 991px)
 {
