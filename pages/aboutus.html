@@ -28,7 +28,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             text-align: center;
-            animation: change 3s infinite ease-in-out;
+            animation: change 50s infinite ease-in-out;
             
         }
 
@@ -44,7 +44,7 @@
             background: #85c1ee;
             padding: 10px 24px;
             text-decoration: none;
-            font-size: 22px;
+            font-size: 18px;
             border-radius: 20px;
         }
 
@@ -56,47 +56,47 @@
             @keyframes change{
                 0%
                 {
-                    background-image: url(./images/aboutus/beach.jpg);
+                    background-image: url(../images/aboutus/beach2.jpg);
                 }
                 10%
                 {
-                    background-image: url(./images/aboutus/hillstation1.jpg);
+                    background-image: url(../images/aboutus/hillstation1.jpg);
                 }
                 20%
                 {
-                    background-image: url(./images/aboutus/historicplace1.jpg);
+                    background-image: url(../images/aboutus/historicplace1.jpg);
                 }
                 30%
                 {
-                    background-image: url(./images/aboutus/ellora-caves.jpg);
+                    background-image: url(../images/aboutus/ellora-caves.jpg);
                 }
                 40%
                 {
-                    background-image: url(./images/aboutus/wildlife1.jpg);
+                    background-image: url(../images/aboutus/wildlife1.jpg);
                 }
                 50%
                 {
-                    background-image: url(./images/aboutus/beach1.jpg);
+                    background-image: url(../images/aboutus/beach1.jpg);
                 }
                 60%
                 {
-                    background-image: url(./images/aboutus/pexels-pixabay-36717.jpg);
+                    background-image: url(../images/aboutus/pexels-pixabay-36717.jpg);
                 }
                 70%
                 {
-                    background-image: url(./images/aboutus/temple1.jpg);
+                    background-image: url(../images/aboutus/temple1.jpg);
                 }
                 80%
                 {
-                    background-image: url(./images/aboutus/wildlife2.jpg);
+                    background-image: url(../images/aboutus/wildlife2.jpg);
                 }
                 90%
                 {
-                    background-image: url(./images/aboutus/kedarnath.jpg);
+                    background-image: url(../images/aboutus/kedarnath.jpg);
                 }
                 100%
                 {
-                    background-image: url(./images/aboutus/beach.jpg);
+                    background-image: url(../images/aboutus/beach2.jpg);
                 }
             }
 
@@ -173,13 +173,12 @@
 
   .intro-container{
 height: 800px;
-width: 100%;
-background-color: #f2f2f2;
+width: 1400px;
+background: linear-gradient(to bottom, #ffffff 73%, #ccffff 100%);
 margin-top: 200px; 
-
 position: absolute;
 box-shadow: #595959 0 0 10px;
-
+margin-left: 60px;
 }
 
 .intro-subcontainer{
@@ -189,9 +188,9 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 position: relative;
-background-color: white;
+background: linear-gradient(to bottom, #ffffff 50%, #66ffff 100%);
 top: -150px;
-box-shadow: #ffcf66 0 0 20px;
+box-shadow: #ffb3ec 0 0 20px;
 
 }
 
@@ -243,12 +242,84 @@ margin-right: 100px;
 
 .feature-text-2{
 margin-top: -500;
-margin-left: 50;
-margin-right: 50;
+margin-left: 80;
+margin-right: 80;
+padding-left: 60px;
+padding-right: 60px;
+padding-bottom: 200px;
 text-align: center;
 font-size: 24px;
 color: #000000;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
 }
 
 
@@ -265,7 +336,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
         <div class="navbar">
 
-            <img src="./images/menu.png" class="menu-icon" onclick="togglesidebae()">
+            <img src="../images/index/menu.png" class="menu-icon" onclick="togglesidebae()">
         </div>
     
         <div class="sidebar sidebar-closed" id="sidebar">
@@ -285,10 +356,62 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     <div class="intro-subcontainer">
 
         <p class="sub-container-text1">We Help You Experience</p>
+        
+        <button class="prev" onclick="plusSlides(-1)">❮</button>
+        <div class="mySlides">
         <p class="sub-container-text2">Company Overview</p>
-        <p class="sub-container-text3">At [Tour Company Name], we're passionate about transforming travel into unforgettable adventures. Founded in [year], we set out with a vision to redefine the way people experience the world.
-             What started as a dream to connect explorers with extraordinary destinations has evolved into a leading force in the travel industry.</p>
+        <p class="sub-container-text3">At [Tour Company Name], we're passionate about transforming travel into unforgettable adventures. Founded 
+            in [year], we set out with a vision to redefine the way people experience the world.
+     What started as a dream to connect explorers with extraordinary destinations has evolved into a leading force in the travel industry.</p>
     </div>
+
+    <div class="mySlides">
+        <p class="sub-container-text2">Mission</p>
+        <p class="sub-container-text3">"At [Tour Company Name], our mission is to curate transformative travel experiences 
+            that immerse adventurers in diverse cultures, awe-inspiring landscapes, and unique encounters. We strive to create unforgettable journeys
+             that foster connections, promote understanding, and leave a positive impact on both travelers and the destinations we explore."</p>
+    </div>
+
+    <div class="mySlides">
+        <p class="sub-container-text2">Values</p>
+        <p class="sub-container-text3">"We believe in providing authentic, immersive experiences that showcase
+             the true essence of each destination, respecting local cultures, traditions, and ecosystems.We are committed to delivering exceptional service,
+              from meticulously planned itineraries to knowledgeable guides, ensuring every traveler enjoys a seamless and enriching experience.</p>
+    </div>
+
+    <div class="mySlides">
+        <p class="sub-container-text2">What Sets Us Apart</p>
+        <p class="sub-container-text3">"At the heart of our company is a commitment to authenticity and excellence. We believe in crafting experiences 
+            that transcend the ordinary, offering travelers unique opportunities to immerse themselves in local cultures, savor breathtaking landscapes,
+             and create lasting memories.</p>
+    </div>
+
+
+    <div class="mySlides">
+        <p class="sub-container-text2">Sustainable Travel</p>
+        <p class="sub-container-text3">"We understand the importance of responsible tourism. As stewards of the places we visit, we prioritize 
+            sustainability,
+             striving to minimize our environmental impact while maximizing positive contributions to local communities.</p>
+    </div>
+
+    <div class="mySlides">
+        <p class="sub-container-text2">Our Promise</p>
+        <p class="sub-container-text3">"At [Tour Company Name], we promise more than just vacations; we promise transformative experiences that leave an indelible
+             mark on the hearts and minds of our travelers. With us, every journey is a story waiting to be written, a moment waiting to be cherished, and an adventure waiting to unfold.</p>
+    </div>
+
+     <button class="next" onclick="plusSlides(1)">❯</button>
+
+     <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span>  
+      </div>
+    </div>
+    
     <p class="feature-text-2">In an age where travel is both a luxury and a gateway to understanding the world,
          [Tour Company Name] stands as an emissary of exploration, weaving tales of wanderlust and adventure since
           its inception [Year of Foundation]. We don't merely offer trips; we craft experiences that redefine how you
@@ -298,9 +421,11 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             wilderness, our meticulously curated itineraries cater to every traveler's yearning for discovery. Whether it's a
              cultural odyssey through bustling markets, an adrenaline-filled escapade scaling majestic peaks, or a serene retreat
               amidst nature's embrace, our offerings cater to diverse tastes and preferences. </p>
+
+
 </div>
 
-    
+
 
     <script>
         let isOpen = false;
@@ -334,5 +459,40 @@ function prevSlide() {
   showSlide(slideIndex);
 }
 setInterval(nextSlide, 1000);
+
+
+
+var slideIndex1 = 1;
+showSlides(slideIndex1);
+
+function plusSlides(n) {
+  showSlides(slideIndex1 += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex1 = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex1 = 1}    
+  if (n < 1) {slideIndex1 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex1-1].style.display = "block";  
+  dots[slideIndex1-1].className += " active";
+}
+
+window.onload= function () {
+  setInterval(function(){ 
+     plusSlides(1);
+  }, 3000);
+ }
     </script>
 </body>

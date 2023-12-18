@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/contactus.css">  
+     
+    <style type="text/css">
+       
+.sidebar
+{
+    height: 100vh;
+    background-color: #020210;
+    width: 150px;
+    position:fixed;
+    top: 0;
+    padding-top: 75px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    
+}
+.menu
+{
+    width: 100px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 5px;
+    margin-left: 10px;                
+    font-size: 20px;
+    background: none;
+    color:#ffffff;
+    text-align: center;          
+    text-decoration: none;
+}
+.menu:hover
+{   
+    display: inline;
+    padding: 10px;
+    color: #999;
+    background: #999;
+    transition: 0.5sec;
+    box-shadow: 0 0 12px 6px rgb(42, 61, 72);
+    color: white;
+
+}
+.sidebar-closed
+{
+ left: -200px;
+}
+        
+    </style>
+</head>
+<body>
+       <section class="contact">
+        <img src="../images/index/menu-icon contact page (1).png" alt="" class="iii menu-icon" onclick="togglesidebae()">
+        <div class="content">
+            <h2>contact us</h2>
+            <p>contact with us regarding any query related to tourism we will provide a satisfied suggestion regarding the tourism . We will provide the best tourism place for visit which will feel your heart with full enjoyment. 
+            </p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon">
+                        <img src="../images/index/navigation.png" alt="">
+                    </div>
+                        <div class="text">
+                            <h3>address</h3>
+                            <p>Rohana , Tahsil Katol<br> Dist nagpur,<br>441305</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <img src="../images/index/call (1).png" alt="">
+                        </div>
+                            <div class="text">
+                                <h3>pnone</h3>
+                                <p>7028657877</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <img src="../images/index/email (1).png" alt="">
+                            </div>
+                                <div class="text">
+                                    <h3>email</h3>
+                                    <p>abcdef123456@.com
+
+                                    </p>
+                                </div>
+                            </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <h2>Send Message</h2>
+                <div class="inputBox">
+                     <input type="text" placeholder="full name" class="int">
+                     <input type="text" placeholder="email" required="" class="int">
+                     <input type="text" placeholder="write any messge...." required="" class="int"><br>
+                    <a href="index.html"><input type="button" onclick="alert('Your Message Send successfully')" value="Send" class="button-send"></a> 
+                </div>
+            </div>
+        </div>
+        </section>
+        <div class="sidebar sidebar-closed" id="sidebar">
+
+            <a class="menu" href="../index.html">Home</a>
+            <a class="menu" href="./pages/book.html">Book Tour</a>
+            <a class="menu" href="aboutus.html">About Us</a>
+            <a  class="menu" href="./pages/login.html">Sign In</a>
+            <a class="menu" href="contactus.html">Contactus</a>
+            <a  class="menu" href="./pages/login.html">Review</a>
+   
+        </div>
+        
+            <script>
+                
+                let isOpen = false;
+               function togglesidebae()
+               {
+                const sidebar = document.getElementById('sidebar');
+                if(isOpen)
+                {
+                    sidebar.classList.add('sidebar-closed');
+                    isOpen = false;
+                }
+                else
+                {
+                    sidebar.classList.remove('sidebar-closed');
+                    isOpen = true;
+                }
+             } 
+             
+            </script>  
+             <footer class="footer-contact">
+                <div class="contact-container">
+                    <div class="footer-col">
+                        <div class="contact-row">
+                         <h4>Company</h4>
+                          <ul>
+                            <li><a href="#" class="contact-footer-info">about us</a></li>
+                            <li><a href="#" class="contact-footer-info">our services</a></li>
+                            <li><a href="#" class="contact-footer-info">privacy policy</a></li>
+                            <li><a href="#" class="contact-footer-info">affiliate program</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="contact-container">
+                        <div class="footer-col">
+                            <div class="contact-row">
+                             <h4>Get Help</h4>
+                              <ul>
+                                <li><a href="#" class="contact-footer-info">FAQ</a></li>
+                                <li><a href="#" class="contact-footer-info">contact</a></li>
+                                <li><a href="#" class="contact-footer-info">enquiry</a></li>
+                                <li><a href="#" class="contact-footer-info">services</a></li>
+                              </ul>
+                            </div>
+                        </div>
+                        <div class="contact-container">
+                            <div class="footer-col">
+                                <div class="contact-row">
+                                 <h4>About Us</h4>
+                                  <ul>
+                                    <li><a href="#" class="contact-footer-info">comapany name</a></li>
+                                    <li><a href="#" class="contact-footer-info">policies</a></li>
+                                    <li><a href="#" class="contact-footer-info">Details</a></li>
+                                  </ul>
+                                </div>
+                            </div>
+                            <div class="contact-container">
+                                <div class="footer-col">
+                                    <div class="contact-row">
+                                     <h4>Follow Us</h4>
+                                      <ul>
+                                        <div class="social-link">
+                                            <img src="../images/index/facebook (1).png" class="img-contact" >&nbsp;&nbsp;
+                                            <img src="../images/index/instagram.png" class="img-contact"  >&nbsp;&nbsp;
+                                            <img src="../images/index/twitter (1).png" class="img-contact"  >&nbsp;&nbsp;
+                                            <img src="../images/index/whatsapp (1).png" class="img-contact"  >&nbsp;&nbsp;
+                                        </div>
+                                      </ul>
+                                    </div>
+                                </div>
+                        
+            </footer>
+            
+</body>
+</html>

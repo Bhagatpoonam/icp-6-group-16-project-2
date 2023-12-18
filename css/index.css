@@ -9,7 +9,7 @@
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-    url(./images/yousef-espanioly-DA_tplYgTow-unsplash.jpg );
+    url(../images/index/yousef-espanioly-DA_tplYgTow-unsplash.jpg );
     background-position: center;
     background-size: cover;
     padding-left: 8%;
@@ -44,28 +44,40 @@
     flex-direction: column;
     height: 45%;
     align-items: center;
+    
 }
 .col{
     flex-basis: 50%;
+    
     margin-top: 100px;
     margin-left: 100px;
     display: flex;
     justify-content: space-evenly;
     
 }
+
 .bol{
     flex-basis: 50%;
+    
 }
 h1{
     color: wheat;
     font-size: 100px;
+    
 }
 p{
     color: #fff;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 15px;
+    color: wheat;
+    
 
 }
+.p1{
+     color: bisque;
+
+}
+
 button{
     width: 180px;
     color: #000;
@@ -76,9 +88,40 @@ button{
     border-radius: 20px;
     outline: none;
     margin-top: 30px;
+    cursor: pointer;
     
     
 }
+
+
+
+button:hover{
+
+        background: cyan;
+        box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+
+
+}
+
+.button-send{
+    color: black;
+    background-color: rgb(251, 253, 253);
+    border: 2px white;
+    cursor: pointer;
+    font-size: 14px;
+    
+}
+.button-send:hover{
+    background-color: aqua;
+    font-size: 18px;
+}
+
+
+
+
+
 .card{
     width: 240px;
     height: 270px;
@@ -94,17 +137,17 @@ button{
     
 }
 .card1{
-    background-image: url(./images/gujarat.jpeg);
+    background-image: url(../images/index/gujarat.jpeg);
     text-decoration: none;
 }
 .card2{
-    background-image: url(./images/jaipur.jpeg);
+    background-image: url(../images/index/jaipur.jpeg);
 }
 .card3{
-    background-image: url(./images/karsten-wurth-M84bYZnCMQg-unsplash.jpg);
+    background-image: url(../images/index/karsten-wurth-M84bYZnCMQg-unsplash.jpg);
 }
 .card4{
-    background-image: url(./images/lion.jpeg);
+    background-image: url(../images/index/lion.jpeg);
 }
 .card:hover{
     transform: translateY(-10px);
@@ -113,6 +156,8 @@ button{
 h5{
     color: #fff;
     text-shadow: 0 0 5px #999;
+    color: black;
+    font-size: 18px;
 
 }
 .card p{
@@ -176,12 +221,7 @@ h5{
 body{
     background-color: aquamarine;
 }
-h2{
-     margin-left:300px;
-     padding-top: 50px;
-     display: inline-block;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
 .explore-button{
     text-decoration: none;
     font-size: 15px;
@@ -192,6 +232,14 @@ h2{
    text-decoration: none;
    box-shadow:0 0 5px 3px rgb(120, 118, 118);
 }
+
+h2{
+     margin-left:300px;
+     padding-top: 50px;
+     display: inline-block;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 @media (max-width : 991px)
 {
   .col{
