@@ -26,10 +26,16 @@
     cursor: pointer;
     margin: -90px;
 }
+.brand-name{
+    text-align: center;
+    color: #0ef;
+    margin-left: 600px; 
+    font-size:35px;
+}
 .menu-icon{
     width: 30px;
     cursor: pointer;
-    margin-left: 1450px;
+    margin-left: 580px;
     z-index: 100;
     
 }
@@ -44,12 +50,13 @@
     flex-direction: column;
     height: 45%;
     align-items: center;
+    margin-top: 70px;
     
 }
 .col{
     flex-basis: 50%;
     
-    margin-top: 100px;
+    margin-top: 70px;
     margin-left: 100px;
     display: flex;
     justify-content: space-evenly;
