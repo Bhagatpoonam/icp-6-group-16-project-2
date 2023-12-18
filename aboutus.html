@@ -13,6 +13,11 @@
             font-family: sans-serif;
         }
 
+        .container{
+            width: 100%;
+            height: 100vh;
+        }
+
         .Section-top{
             width: 100%;
             height: 100%;
@@ -23,22 +28,23 @@
             background-repeat: no-repeat;
             background-size: cover;
             text-align: center;
-            animation: change 10% infinite ease-in-out;
+            animation: change 3s infinite ease-in-out;
+            
         }
 
         .content{
             position: absolute;
-            top: 50%;
+            top: 20%;
             left: 50%;
             transform: translate(-50%, -50%);
             text-transform: uppercase;
-        }
+            font-size: 26px;        }
 
         .content a{
             background: #85c1ee;
             padding: 10px 24px;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 22px;
             border-radius: 20px;
         }
 
@@ -52,21 +58,41 @@
                 {
                     background-image: url(./images/aboutus/beach.jpg);
                 }
-                20%
+                10%
                 {
                     background-image: url(./images/aboutus/hillstation1.jpg);
                 }
-                40%
+                20%
                 {
                     background-image: url(./images/aboutus/historicplace1.jpg);
                 }
+                30%
+                {
+                    background-image: url(./images/aboutus/ellora-caves.jpg);
+                }
+                40%
+                {
+                    background-image: url(./images/aboutus/wildlife1.jpg);
+                }
+                50%
+                {
+                    background-image: url(./images/aboutus/beach1.jpg);
+                }
                 60%
                 {
-                    background-image: url(./images/aboutus/taj-mahalimg.jpeg);
+                    background-image: url(./images/aboutus/pexels-pixabay-36717.jpg);
+                }
+                70%
+                {
+                    background-image: url(./images/aboutus/temple1.jpg);
                 }
                 80%
                 {
-                    background-image: url(./images/aboutus/wildlife1.jpg);
+                    background-image: url(./images/aboutus/wildlife2.jpg);
+                }
+                90%
+                {
+                    background-image: url(./images/aboutus/kedarnath.jpg);
                 }
                 100%
                 {
@@ -74,18 +100,239 @@
                 }
             }
 
+            .sidebar {
+            height: 100vh;
+            background-color: #020210;
+            width: 150px;
+            position: fixed;
+            top: 0;
+            padding-top: 75px;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            opacity: 0.7;
+            background-position: center;
+            background-size: cover;
+            color: #ffffff;
+
+        }
+
+        .menu {
+            width: 100px;
+            text-align: center;
+            margin-top: 30px;
+            padding: 5px;
+            margin-left: 10px;
+            font-size: 20px;
+            background: none;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .menu:hover {
+            display: inline;
+            padding: 10px;
+            color: #999;
+            background: #999;
+            transition: 0.5sec;
+            box-shadow: 0 0 12px 6px rgb(42, 61, 72);
+            color: white;
+
+        }
+
+        .sidebar-closed {
+            left: -200px;
+        }
+
+        .navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin: -90px;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 1450px;
+    z-index: 100;
+    
+}
+.menu-icon:hover{
+    box-shadow: 0 0 10px 8px rgb(98, 96, 96);
+    border-radius: 50%;
+    
+}
+
+
+  .intro-container{
+height: 800px;
+width: 100%;
+background-color: #f2f2f2;
+margin-top: 200px; 
+
+position: absolute;
+box-shadow: #595959 0 0 10px;
+
+}
+
+.intro-subcontainer{
+height:400px;
+width: 900px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+background-color: white;
+top: -150px;
+box-shadow: #ffcf66 0 0 20px;
+
+}
+
+.sub-container-text1{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 26px;
+text-align: center;
+padding: 12px;
+}
+
+.sub-container-text2{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 26px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+background-color: #ff751a;
+height: 30px;
+width: 250px;
+color: white;
+text-align: center;
+}
+
+.sub-container-text3{
+text-align: center;
+margin-left: 70px;
+margin-right: 70px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: larger;
+}
+
+
+.feature-heading{
+padding-top: 50px;
+text-align: center;
+font-size: 40px;
+color: #ff751a;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.feature-text{
+text-align: center;
+font-size: 24px;
+color: #000000;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin-left: 100px;
+margin-right: 100px;
+}
+
+.feature-text-2{
+margin-top: -500;
+margin-left: 50;
+margin-right: 50;
+text-align: center;
+font-size: 24px;
+color: #000000;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
     </style>
 </head>
 
 <body>
+    <div class="container">
     <div class="Section-top">
         <div class="content">
-            <h1>Abhout Us</h1>
+            <h1>About Us</h1>
             <a href="#">Welcome</a>
         </div>
+
+        <div class="navbar">
+
+            <img src="./images/menu.png" class="menu-icon" onclick="togglesidebae()">
+        </div>
+    
+        <div class="sidebar sidebar-closed" id="sidebar">
+    
+            <a class="menu" href="./index.html">Home</a>
+            <a class="menu" href="./pages/book.html">Book Tour</a>
+            <a class="menu" href="./pages/aboutus.html">About</a>
+            <a class="menu" href="./pages/contactus.html">Contact</a>
+            <a class="menu" href="./pages/login.html">Sign In</a>
+    
+        </div>
     </div>
+</div>
+
+
+  <div class="intro-container">
+    <div class="intro-subcontainer">
+
+        <p class="sub-container-text1">We Help You Experience</p>
+        <p class="sub-container-text2">Company Overview</p>
+        <p class="sub-container-text3">At [Tour Company Name], we're passionate about transforming travel into unforgettable adventures. Founded in [year], we set out with a vision to redefine the way people experience the world.
+             What started as a dream to connect explorers with extraordinary destinations has evolved into a leading force in the travel industry.</p>
+    </div>
+    <p class="feature-text-2">In an age where travel is both a luxury and a gateway to understanding the world,
+         [Tour Company Name] stands as an emissary of exploration, weaving tales of wanderlust and adventure since
+          its inception [Year of Foundation]. We don't merely offer trips; we craft experiences that redefine how you
+           perceive travel, inviting you to immerse yourself in the tapestry of global cultures, breathtaking landscapes
+           , and authentic encounters that leave an everlasting imprint on your soul. At [Tour Company Name], our repertoire of 
+           experiences is as diverse as the world itself. From traversing ancient trails steeped in history to embracing the untamed
+            wilderness, our meticulously curated itineraries cater to every traveler's yearning for discovery. Whether it's a
+             cultural odyssey through bustling markets, an adrenaline-filled escapade scaling majestic peaks, or a serene retreat
+              amidst nature's embrace, our offerings cater to diverse tastes and preferences. </p>
+</div>
+
+    
 
     <script>
+        let isOpen = false;
+function togglesidebae() {
+    const sidebar = document.getElementById('sidebar');
+    if (isOpen) {
+        sidebar.classList.add('sidebar-closed');
+        isOpen = false;
+    }
+    else {
+        sidebar.classList.remove('sidebar-closed');
+        isOpen = true;
+    }
+}
 
+
+let slideIndex = 0;
+
+function showSlide(index) {
+  const slides = document.querySelector('.slides');
+  slides.style.transform = `translateX(-${index * 100}%)`;
+}
+
+function nextSlide() {
+  slideIndex = (slideIndex + 1) % document.querySelectorAll('.slides img').length;
+  showSlide(slideIndex);
+}
+
+function prevSlide() {
+  slideIndex = (slideIndex - 1 + document.querySelectorAll('.slides img').length) % document.querySelectorAll('.slides img').length;
+  showSlide(slideIndex);
+}
+setInterval(nextSlide, 1000);
     </script>
 </body>
