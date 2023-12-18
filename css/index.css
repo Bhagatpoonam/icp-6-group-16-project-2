@@ -9,7 +9,7 @@
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-    url(./images/yousef-espanioly-DA_tplYgTow-unsplash.jpg );
+    url(../images/index/yousef-espanioly-DA_tplYgTow-unsplash.jpg );
     background-position: center;
     background-size: cover;
     padding-left: 8%;
@@ -77,18 +77,23 @@ p{
      color: bisque;
 
 }
+
 button{
     width: 180px;
     color: #000;
-    font-size: 15px;
+    font-size: 12px;
     padding: 12px 0;
-    background:wheat;
+    background: #fff;
     border: 0;
     border-radius: 20px;
     outline: none;
     margin-top: 30px;
+    cursor: pointer;
+    
     
 }
+
+
 
 button:hover{
 
@@ -99,6 +104,22 @@ button:hover{
 
 
 }
+
+.button-send{
+    color: black;
+    background-color: rgb(251, 253, 253);
+    border: 2px white;
+    cursor: pointer;
+    font-size: 14px;
+    
+}
+.button-send:hover{
+    background-color: aqua;
+    font-size: 18px;
+}
+
+
+
 
 
 .card{
@@ -116,17 +137,17 @@ button:hover{
     
 }
 .card1{
-    background-image: url(./images/gujarat.jpeg);
+    background-image: url(../images/index/gujarat.jpeg);
     text-decoration: none;
 }
 .card2{
-    background-image: url(./images/jaipur.jpeg);
+    background-image: url(../images/index/jaipur.jpeg);
 }
 .card3{
-    background-image: url(./images/karsten-wurth-M84bYZnCMQg-unsplash.jpg);
+    background-image: url(../images/index/karsten-wurth-M84bYZnCMQg-unsplash.jpg);
 }
 .card4{
-    background-image: url(./images/lion.jpeg);
+    background-image: url(../images/index/lion.jpeg);
 }
 .card:hover{
     transform: translateY(-10px);
@@ -200,25 +221,25 @@ h5{
 body{
     background-color: aquamarine;
 }
+
+.explore-button{
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+}
+.explore-button:hover
+{
+   text-decoration: none;
+   box-shadow:0 0 5px 3px rgb(120, 118, 118);
+}
+
 h2{
      margin-left:300px;
      padding-top: 50px;
      display: inline-block;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.explore-button{
-    text-decoration: none;
-    font-size: 15px;
 
-    color: #000;
-}
-.explore-button:hover
-{
-   text-decoration: none;
-   font-size: 18px;
-   box-shadow:0 0 5px 3px rgb(120, 118, 118);
-   
-}
 @media (max-width : 991px)
 {
   .col{
