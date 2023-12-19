@@ -1,0 +1,304 @@
+body{
+    background-color:#ffcce6;
+}
+.heading{
+    margin-left:45%;
+    margin-top:10px;
+    font-size:24px;
+    color:#0d1a00;
+}
+.images{
+background-color:#ffff;
+width:250px;
+height:450px;
+padding:40px 20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+display:flex;
+justify-content: space-around;
+margin-left:40px;
+position:relative;
+flex-direction:row;
+align-items: center;
+}
+.swaminarayan-temple{
+    height:200px;
+    width:250px;
+    display:flex;
+    margin-left:-5px;
+    margin-top:-20px;
+    filter:drop-shadow(0 0 10px #ffff);
+    border-radius:10px;
+    flex-direction: row;
+    cursor:pointer;
+    align-items: center;
+}
+.khajuraho-temple{
+    height:170px;
+    display:flex;
+    margin-left:5px;
+    margin-top:-20px;
+    filter:drop-shadow(0 0 10px #ffff);
+    border-radius:10px;
+    flex-direction: row;
+    cursor:pointer;
+    align-items:center;
+    
+}
+.veera-narayan-temple{
+    height:180px;
+    width:250px;
+    display:flex;
+    margin-left:-5px;
+    margin-top:-20px;
+    filter:drop-shadow(0 0 10px #ffff);
+    border-radius:10px;
+    flex-direction: row;
+    cursor:pointer;
+    align-items:center;
+}
+.meenakshi-temple{
+    height:170px;
+    width:250px;
+    display:flex;
+    margin-left:-5px;
+    margin-top:-20px;
+    filter:drop-shadow(0 0 10px #ffff);
+    border-radius:10px;
+    flex-direction: row;
+    cursor:pointer;
+    align-items:center;
+}
+
+.description1{
+    text-align:center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin-top:5px;
+    text-align:justify;
+}
+.description2{
+    text-align:center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin-top:5px;
+    text-align:justify;
+}
+
+.description3{
+    text-align:center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin-top:2px;
+    text-align:justify;
+}
+.description4{
+    text-align:center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin-top:5px;
+    text-align:justify;
+}
+.btn{
+    border-radius:20px;
+    border:none;
+    background-color:#24262b;
+    padding: 5px 50px;
+    color:#ffff;
+    font-size:18px;
+    font-weight:bold;
+    margin-top:10px;
+    cursor:pointer;
+    display:block;
+    margin-left:auto;
+    margin-right:auto
+}
+.btn:hover{
+    padding:3px 10px;
+    box-shadow:0px 0px 0px 1px #e6ffff;
+    margin-top:20px;
+    cursor:pointer;
+    
+}
+.arrow{
+   height:25px;
+   width:25px;
+   margin-left:220px;
+   margin-top:5px;
+   cursor:pointer;
+}
+.arrow1{
+   height:30px;
+   width:30px;
+   margin-top :-30px;
+   cursor:pointer;
+   
+}
+.arrow1:hover{
+    box-shadow:0px 0px 0px 1px #e6ffff;
+    height:35px;
+    width:35px;
+    cursor:pointer;
+}
+.arrow:hover{
+    box-shadow:0px 0px 0px 1px #e6ffff;
+    height:35px;
+    width:35px;
+    cursor:pointer;
+}
+.rate{
+    margin-left:70px;
+    
+}
+.rate1{
+    margin-left:70px;
+    margin-top:-10px;
+}
+
+.footer-contact{
+    background-color:  #24262b;
+    padding: 50px 0;
+    height:250px;
+    margin-top:20px;
+}
+.contact-container{
+    max-width: 2000px;
+    margin:auto;
+    display: flex;
+    margin-left:180px ;
+    
+}
+.footer-col{
+    color: white;
+    font-size: 20px;
+
+}
+.contact-row{
+    line-height:27px;
+    margin-left:10px;
+}
+.contact-footer-info{
+    text-decoration: none;
+    color: #bbbbbb;
+}
+.social-link{
+   line-height: 100px;
+    display: flex;
+}
+.footer-col h4{
+    line-height:50px;
+    text-underline-position: 5px;
+}
+.img-contact{
+    width:30px;
+    height:30px;
+    cursor:pointer;
+}
+.sidebar {
+    height: 100vh;
+    background-color: #020210;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    padding-top: 75px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+
+}
+
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 1200px;
+    z-index: 100;
+    
+}
+.menu-icon:hover{
+    box-shadow: 0 0 10px 8px rgb(98, 96, 96);
+    border-radius: 50%;
+    
+}
+
+.menu {
+    width: 30px;
+    text-align: center;
+    margin-top: 40px;
+    padding: 5px;
+    margin-left: 2650px;
+    font-size: 20px;
+    background: none;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu:hover {
+    display: inline;
+    padding: 10px;
+    color: #999;
+    background: #999;
+    transition: 0.5sec;
+    box-shadow: 0 0 15px 15px rgb(42, 61, 72);
+    color: white;
+
+}
+
+.sidebar-closed {
+    left: -200px;
+}
+
+@media (max-width : 991px)
+{
+  .col{
+    margin-top: 300px;
+    margin-left:-1px ;
+  }
+}
+.footer-contact{
+    background-color:  #24262b;
+    padding: 50px 0;
+    height:230px;
+    width:1300px;
+}
+.contact-container{
+    max-width: 1170px;
+    margin:auto;
+    display: flex;
+    margin-left:180px ;
+    
+}
+.footer-col{
+    color: white;
+    font-size: 20px;
+
+}
+.contact-row{
+    line-height:27px;
+}
+.contact-footer-info{
+    text-decoration: none;
+    color: #bbbbbb;
+}
+.social-link{
+   line-height: 100px;
+    display: flex;
+}
+.footer-col h4{
+    line-height:50px;
+    text-underline-position: 5px;
+}
+.img-contact{
+    width:30px;
+    height:30px;
+}
