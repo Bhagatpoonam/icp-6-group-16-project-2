@@ -31,11 +31,24 @@
             animation: change 50s infinite ease-in-out;
             
         }
-
+        .logo{
+            
+            text-align: center;
+            padding-bottom: 60px;
+            top: 40%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+            font-size: 80px;   
+        font-family: arial black;    
+    color: #ddd; }
+        
         .content{
             position: absolute;
-            top: 20%;
-            left: 50%;
+            top: 40%;
+            left: 30%;
             transform: translate(-50%, -50%);
             text-transform: uppercase;
             font-size: 26px;        }
@@ -220,6 +233,8 @@ margin-left: 70px;
 margin-right: 70px;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-size: larger;
+background-image: url(../images/index/backg-img\ \(1\).jpg);
+
 }
 
 
@@ -270,7 +285,6 @@ button {
   text-align: center;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -285,27 +299,23 @@ button {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   position: absolute;
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
   color: white;
 }
 
-/* The dot/bullet/indicator container */
 .dot-container {
     text-align: center;
     padding: 20px;
     background: #ddd;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -317,11 +327,120 @@ button {
   transition: background-color 0.6s ease;
 }
 
-/* Add a background color to the active dot/circle */
 .active, .dot:hover {
   background-color: #717171;
 }
+.expertise-container{
+    height:700px;
+width: 1000px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 1200px;
+background: linear-gradient(to bottom, #ffffff 50%, #66ffff 100%);
+box-shadow: #ffb3ec 0 0 20px;}
 
+.expertise-text{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 20px;
+}
+
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+  margin: 30px;
+  
+}
+
+.slides img {
+  width: 100%;
+  display: block;
+  
+}
+
+
+.bar {
+  top: 1500;
+  left: 0;
+
+  width: 100%;
+  padding: 25px 0;
+
+  background-image: url(../images/index/hilllls\ -\ Copy.jpg);
+  color: white;
+
+  font-family: Gelasio;
+  font-size: 18px;
+  margin-top: 80px;
+}
+
+.bar_content {
+  display: block; 
+
+  width: 100%;
+  transform: translateX(100%);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: bold;
+font-size: 25px;
+  animation: move 30s linear infinite 
+}
+
+@keyframes move {
+  to { transform: translateX(-100%); }
+}
+
+@media (max-width : 991px)
+{
+  .col{
+    margin-top: 300px;
+    margin-left:-1px ;
+  }
+}
+.footer-contact{
+    background-color:  #24262b;
+    padding: 50px 0;
+    height:250px;
+}
+.contact-container{
+    max-width: 1170px;
+    margin:auto;
+    display: flex;
+    margin-left:180px ;
+    
+}
+.footer-col{
+    color: white;
+    font-size: 20px;
+
+}
+.contact-row{
+    line-height:27px;
+}
+.contact-footer-info{
+    text-decoration: none;
+    color: #bbbbbb;
+}
+.social-link{
+   line-height: 100px;
+    display: flex;
+}
+.footer-col h4{
+    line-height:50px;
+    text-underline-position: 5px;
+}
+.img-contact{
+    width:30px;
+    height:30px;
+}
 
     </style>
 </head>
@@ -329,9 +448,11 @@ button {
 <body>
     <div class="container">
     <div class="Section-top">
+        
         <div class="content">
+            <h1 class="logo">AdventureAvenue</h1>
             <h1>About Us</h1>
-            <a href="#">Welcome</a>
+            <a href="#" onmouseover="welcome()">Welcome</a>
         </div>
 
         <div class="navbar">
@@ -360,14 +481,14 @@ button {
         <button class="prev" onclick="plusSlides(-1)">❮</button>
         <div class="mySlides">
         <p class="sub-container-text2">Company Overview</p>
-        <p class="sub-container-text3">At [Tour Company Name], we're passionate about transforming travel into unforgettable adventures. Founded 
-            in [year], we set out with a vision to redefine the way people experience the world.
+        <p class="sub-container-text3">At AdventureAvenue, we're passionate about transforming travel into unforgettable adventures. Founded 
+            in 2012, we set out with a vision to redefine the way people experience the world.
      What started as a dream to connect explorers with extraordinary destinations has evolved into a leading force in the travel industry.</p>
     </div>
 
     <div class="mySlides">
         <p class="sub-container-text2">Mission</p>
-        <p class="sub-container-text3">"At [Tour Company Name], our mission is to curate transformative travel experiences 
+        <p class="sub-container-text3">"At AdventureAvenue, our mission is to curate transformative travel experiences 
             that immerse adventurers in diverse cultures, awe-inspiring landscapes, and unique encounters. We strive to create unforgettable journeys
              that foster connections, promote understanding, and leave a positive impact on both travelers and the destinations we explore."</p>
     </div>
@@ -396,7 +517,7 @@ button {
 
     <div class="mySlides">
         <p class="sub-container-text2">Our Promise</p>
-        <p class="sub-container-text3">"At [Tour Company Name], we promise more than just vacations; we promise transformative experiences that leave an indelible
+        <p class="sub-container-text3">"At AdventureAvenue, we promise more than just vacations; we promise transformative experiences that leave an indelible
              mark on the hearts and minds of our travelers. With us, every journey is a story waiting to be written, a moment waiting to be cherished, and an adventure waiting to unfold.</p>
     </div>
 
@@ -413,19 +534,42 @@ button {
     </div>
     
     <p class="feature-text-2">In an age where travel is both a luxury and a gateway to understanding the world,
-         [Tour Company Name] stands as an emissary of exploration, weaving tales of wanderlust and adventure since
-          its inception [Year of Foundation]. We don't merely offer trips; we craft experiences that redefine how you
+         AdventureAvenue stands as an emissary of exploration, weaving tales of wanderlust and adventure since
+          its inception 2012. We don't merely offer trips; we craft experiences that redefine how you
            perceive travel, inviting you to immerse yourself in the tapestry of global cultures, breathtaking landscapes
-           , and authentic encounters that leave an everlasting imprint on your soul. At [Tour Company Name], our repertoire of 
+           , and authentic encounters that leave an everlasting imprint on your soul. At AdventureAvenue, our repertoire of 
            experiences is as diverse as the world itself. From traversing ancient trails steeped in history to embracing the untamed
             wilderness, our meticulously curated itineraries cater to every traveler's yearning for discovery. Whether it's a
              cultural odyssey through bustling markets, an adrenaline-filled escapade scaling majestic peaks, or a serene retreat
               amidst nature's embrace, our offerings cater to diverse tastes and preferences. </p>
 
-
 </div>
 
 
+
+<div class="expertise-container">
+
+    <p class="expertise-text">Our Expertise</p>
+
+    <div class="slider">
+        <div class="slides">
+            <img src="../images/aboutus/Slide1.JPG">
+            <img src="../images/aboutus/Slide2.JPG">
+            <img src="../images/aboutus/Slide3.JPG">
+            <img src="../images/aboutus/Slide4.JPG">
+            <img src="../images/aboutus/Slide5.JPG">
+        </div>
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
+      </div>
+
+</div>
+<div class="bar">
+    <span class="bar_content">* Special offers available for Christmas Days *
+    </span>
+  </div>
+
+  </body>
 
     <script>
         let isOpen = false;
@@ -458,8 +602,8 @@ function prevSlide() {
   slideIndex = (slideIndex - 1 + document.querySelectorAll('.slides img').length) % document.querySelectorAll('.slides img').length;
   showSlide(slideIndex);
 }
-setInterval(nextSlide, 1000);
 
+setInterval(nextSlide, 3000);
 
 
 var slideIndex1 = 1;
@@ -494,5 +638,65 @@ window.onload= function () {
      plusSlides(1);
   }, 3000);
  }
+
+
+
+ alert('You are redirecting to the about us page')
+
     </script>
+
+
+
+<footer class="footer-contact">
+    <div class="contact-container">
+        <div class="footer-col">
+            <div class="contact-row">
+             <h4>Company</h4>
+              <ul>
+                <li><a href="#" class="contact-footer-info">about us</a></li>
+                <li><a href="#" class="contact-footer-info">our services</a></li>
+                <li><a href="#" class="contact-footer-info">privacy policy</a></li>
+                <li><a href="#" class="contact-footer-info">affiliate program</a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="footer-col">
+                <div class="contact-row">
+                 <h4>Get Help</h4>
+                  <ul>
+                    <li><a href="#" class="contact-footer-info">FAQ</a></li>
+                    <li><a href="#" class="contact-footer-info">contact</a></li>
+                    <li><a href="#" class="contact-footer-info">enquiry</a></li>
+                    <li><a href="#" class="contact-footer-info">services</a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="contact-container">
+                <div class="footer-col">
+                    <div class="contact-row">
+                     <h4>About Us</h4>
+                      <ul>
+                        <li><a href="#" class="contact-footer-info">comapany name</a></li>
+                        <li><a href="#" class="contact-footer-info">policies</a></li>
+                        <li><a href="#" class="contact-footer-info">Details</a></li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="contact-container">
+                    <div class="footer-col">
+                        <div class="contact-row">
+                         <h4>Follow Us</h4>
+                          <ul>
+                            <div class="social-link">
+                                <img src="../images/index/facebook (1).png" class="img-contact" >&nbsp;&nbsp;
+                                <img src="../images/index/instagram.png" class="img-contact"  >&nbsp;&nbsp;
+                                <img src="../images/index/twitter (1).png" class="img-contact"  >&nbsp;&nbsp;
+                                <img src="../images/index/whatsapp (1).png" class="img-contact"  >&nbsp;&nbsp;
+                            </div>
+                          </ul>
+                        </div>
+                    </div>
+            
+</footer>
 </body>
