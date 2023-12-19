@@ -14,6 +14,8 @@ function changeImage3(fileName){
     let img=document.querySelector('#image4');
     img.setAttribute("src",fileName);
 }
+
+
 let isOpen = false;
 function togglesidebae()
 {
@@ -29,3 +31,15 @@ function togglesidebae()
      isOpen = true;
  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
