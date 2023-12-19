@@ -4,334 +4,17 @@
 <head>
     <title>about us</title>
 
-    <style>
-        body{
-            margin: 0%;
-            padding: 0%;
-            width: 100%;
-            height: 100vh;
-            font-family: sans-serif;
-        }
-
-        .container{
-            width: 100%;
-            height: 100vh;
-        }
-
-        .Section-top{
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            position: relative;
-            background-image: url(./images/aboutus/beach1.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            text-align: center;
-            animation: change 50s infinite ease-in-out;
-            
-        }
-
-        .content{
-            position: absolute;
-            top: 20%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-transform: uppercase;
-            font-size: 26px;        }
-
-        .content a{
-            background: #85c1ee;
-            padding: 10px 24px;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 20px;
-        }
-
-        .content a:hover{
-            background: #034e88;
-            color: #fff;
-        }
-
-            @keyframes change{
-                0%
-                {
-                    background-image: url(../images/aboutus/beach2.jpg);
-                }
-                10%
-                {
-                    background-image: url(../images/aboutus/hillstation1.jpg);
-                }
-                20%
-                {
-                    background-image: url(../images/aboutus/historicplace1.jpg);
-                }
-                30%
-                {
-                    background-image: url(../images/aboutus/ellora-caves.jpg);
-                }
-                40%
-                {
-                    background-image: url(../images/aboutus/wildlife1.jpg);
-                }
-                50%
-                {
-                    background-image: url(../images/aboutus/beach1.jpg);
-                }
-                60%
-                {
-                    background-image: url(../images/aboutus/pexels-pixabay-36717.jpg);
-                }
-                70%
-                {
-                    background-image: url(../images/aboutus/temple1.jpg);
-                }
-                80%
-                {
-                    background-image: url(../images/aboutus/wildlife2.jpg);
-                }
-                90%
-                {
-                    background-image: url(../images/aboutus/kedarnath.jpg);
-                }
-                100%
-                {
-                    background-image: url(../images/aboutus/beach2.jpg);
-                }
-            }
-
-            .sidebar {
-            height: 100vh;
-            background-color: #020210;
-            width: 150px;
-            position: fixed;
-            top: 0;
-            padding-top: 75px;
-            right: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-            opacity: 0.7;
-            background-position: center;
-            background-size: cover;
-            color: #ffffff;
-
-        }
-
-        .menu {
-            width: 100px;
-            text-align: center;
-            margin-top: 30px;
-            padding: 5px;
-            margin-left: 10px;
-            font-size: 20px;
-            background: none;
-            color: #ffffff;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        .menu:hover {
-            display: inline;
-            padding: 10px;
-            color: #999;
-            background: #999;
-            transition: 0.5sec;
-            box-shadow: 0 0 12px 6px rgb(42, 61, 72);
-            color: white;
-
-        }
-
-        .sidebar-closed {
-            left: -200px;
-        }
-
-        .navbar{
-    height: 12%;
-    display: flex;
-    align-items: center;
-}
-.logo{
-    width: 50px;
-    cursor: pointer;
-    margin: -90px;
-}
-.menu-icon{
-    width: 30px;
-    cursor: pointer;
-    margin-left: 1450px;
-    z-index: 100;
-    
-}
-.menu-icon:hover{
-    box-shadow: 0 0 10px 8px rgb(98, 96, 96);
-    border-radius: 50%;
-    
-}
-
-
-  .intro-container{
-height: 800px;
-width: 1400px;
-background: linear-gradient(to bottom, #ffffff 73%, #ccffff 100%);
-margin-top: 200px; 
-position: absolute;
-box-shadow: #595959 0 0 10px;
-margin-left: 60px;
-}
-
-.intro-subcontainer{
-height:400px;
-width: 900px;
-display: block;
-margin-left: auto;
-margin-right: auto;
-position: relative;
-background: linear-gradient(to bottom, #ffffff 50%, #66ffff 100%);
-top: -150px;
-box-shadow: #ffb3ec 0 0 20px;
-
-}
-
-.sub-container-text1{
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: 26px;
-text-align: center;
-padding: 12px;
-}
-
-.sub-container-text2{
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: 26px;
-display: block;
-margin-left: auto;
-margin-right: auto;
-background-color: #ff751a;
-height: 30px;
-width: 250px;
-color: white;
-text-align: center;
-}
-
-.sub-container-text3{
-text-align: center;
-margin-left: 70px;
-margin-right: 70px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: larger;
-}
-
-
-.feature-heading{
-padding-top: 50px;
-text-align: center;
-font-size: 40px;
-color: #ff751a;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.feature-text{
-text-align: center;
-font-size: 24px;
-color: #000000;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-margin-left: 100px;
-margin-right: 100px;
-}
-
-.feature-text-2{
-margin-top: -500;
-margin-left: 80;
-margin-right: 80;
-padding-left: 60px;
-padding-right: 60px;
-padding-bottom: 200px;
-text-align: center;
-font-size: 24px;
-color: #000000;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.mySlides {
-  display: none;
-  padding: 80px;
-  text-align: center;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: white;
-}
-
-/* The dot/bullet/indicator container */
-.dot-container {
-    text-align: center;
-    padding: 20px;
-    background: #ddd;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-/* Add a background color to the active dot/circle */
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-
-    </style>
+    <link rel="stylesheet" href="../css/aboutus.css">
 </head>
 
 <body>
     <div class="container">
     <div class="Section-top">
+        
         <div class="content">
+            <h1 class="logo">AdventureAvenue</h1>
             <h1>About Us</h1>
-            <a href="#">Welcome</a>
+            <a href="#" onmouseover="welcome()">Welcome</a>
         </div>
 
         <div class="navbar">
@@ -360,14 +43,14 @@ button {
         <button class="prev" onclick="plusSlides(-1)">❮</button>
         <div class="mySlides">
         <p class="sub-container-text2">Company Overview</p>
-        <p class="sub-container-text3">At [Tour Company Name], we're passionate about transforming travel into unforgettable adventures. Founded 
-            in [year], we set out with a vision to redefine the way people experience the world.
+        <p class="sub-container-text3">At AdventureAvenue, we're passionate about transforming travel into unforgettable adventures. Founded 
+            in 2012, we set out with a vision to redefine the way people experience the world.
      What started as a dream to connect explorers with extraordinary destinations has evolved into a leading force in the travel industry.</p>
     </div>
 
     <div class="mySlides">
         <p class="sub-container-text2">Mission</p>
-        <p class="sub-container-text3">"At [Tour Company Name], our mission is to curate transformative travel experiences 
+        <p class="sub-container-text3">"At AdventureAvenue, our mission is to curate transformative travel experiences 
             that immerse adventurers in diverse cultures, awe-inspiring landscapes, and unique encounters. We strive to create unforgettable journeys
              that foster connections, promote understanding, and leave a positive impact on both travelers and the destinations we explore."</p>
     </div>
@@ -396,7 +79,7 @@ button {
 
     <div class="mySlides">
         <p class="sub-container-text2">Our Promise</p>
-        <p class="sub-container-text3">"At [Tour Company Name], we promise more than just vacations; we promise transformative experiences that leave an indelible
+        <p class="sub-container-text3">"At AdventureAvenue, we promise more than just vacations; we promise transformative experiences that leave an indelible
              mark on the hearts and minds of our travelers. With us, every journey is a story waiting to be written, a moment waiting to be cherished, and an adventure waiting to unfold.</p>
     </div>
 
@@ -413,86 +96,99 @@ button {
     </div>
     
     <p class="feature-text-2">In an age where travel is both a luxury and a gateway to understanding the world,
-         [Tour Company Name] stands as an emissary of exploration, weaving tales of wanderlust and adventure since
-          its inception [Year of Foundation]. We don't merely offer trips; we craft experiences that redefine how you
+         AdventureAvenue stands as an emissary of exploration, weaving tales of wanderlust and adventure since
+          its inception 2012. We don't merely offer trips; we craft experiences that redefine how you
            perceive travel, inviting you to immerse yourself in the tapestry of global cultures, breathtaking landscapes
-           , and authentic encounters that leave an everlasting imprint on your soul. At [Tour Company Name], our repertoire of 
+           , and authentic encounters that leave an everlasting imprint on your soul. At AdventureAvenue, our repertoire of 
            experiences is as diverse as the world itself. From traversing ancient trails steeped in history to embracing the untamed
             wilderness, our meticulously curated itineraries cater to every traveler's yearning for discovery. Whether it's a
              cultural odyssey through bustling markets, an adrenaline-filled escapade scaling majestic peaks, or a serene retreat
               amidst nature's embrace, our offerings cater to diverse tastes and preferences. </p>
 
-
 </div>
 
 
 
-    <script>
-        let isOpen = false;
-function togglesidebae() {
-    const sidebar = document.getElementById('sidebar');
-    if (isOpen) {
-        sidebar.classList.add('sidebar-closed');
-        isOpen = false;
-    }
-    else {
-        sidebar.classList.remove('sidebar-closed');
-        isOpen = true;
-    }
-}
+<div class="expertise-container">
+
+    <p class="expertise-text">Our Expertise</p>
+
+    <div class="slider">
+        <div class="slides">
+            <img src="../images/aboutus/Slide1.JPG">
+            <img src="../images/aboutus/Slide2.JPG">
+            <img src="../images/aboutus/Slide3.JPG">
+            <img src="../images/aboutus/Slide4.JPG">
+            <img src="../images/aboutus/Slide5.JPG">
+        </div>
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
+      </div>
+
+</div>
+<div class="bar">
+    <span class="bar_content">* Special offers available for Christmas Days *
+    </span>
+  </div>
+
+  </body>
+
+    
+
+    
+<script src="../javascript/aboutus.js"></script>
 
 
-let slideIndex = 0;
-
-function showSlide(index) {
-  const slides = document.querySelector('.slides');
-  slides.style.transform = `translateX(-${index * 100}%)`;
-}
-
-function nextSlide() {
-  slideIndex = (slideIndex + 1) % document.querySelectorAll('.slides img').length;
-  showSlide(slideIndex);
-}
-
-function prevSlide() {
-  slideIndex = (slideIndex - 1 + document.querySelectorAll('.slides img').length) % document.querySelectorAll('.slides img').length;
-  showSlide(slideIndex);
-}
-setInterval(nextSlide, 1000);
-
-
-
-var slideIndex1 = 1;
-showSlides(slideIndex1);
-
-function plusSlides(n) {
-  showSlides(slideIndex1 += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex1 = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex1 = 1}    
-  if (n < 1) {slideIndex1 = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex1-1].style.display = "block";  
-  dots[slideIndex1-1].className += " active";
-}
-
-window.onload= function () {
-  setInterval(function(){ 
-     plusSlides(1);
-  }, 3000);
- }
-    </script>
+<footer class="footer-contact">
+    <div class="contact-container">
+        <div class="footer-col">
+            <div class="contact-row">
+             <h4>Company</h4>
+              <ul>
+                <li><a href="#" class="contact-footer-info">about us</a></li>
+                <li><a href="#" class="contact-footer-info">our services</a></li>
+                <li><a href="#" class="contact-footer-info">privacy policy</a></li>
+                <li><a href="#" class="contact-footer-info">affiliate program</a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="footer-col">
+                <div class="contact-row">
+                 <h4>Get Help</h4>
+                  <ul>
+                    <li><a href="#" class="contact-footer-info">FAQ</a></li>
+                    <li><a href="#" class="contact-footer-info">contact</a></li>
+                    <li><a href="#" class="contact-footer-info">enquiry</a></li>
+                    <li><a href="#" class="contact-footer-info">services</a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="contact-container">
+                <div class="footer-col">
+                    <div class="contact-row">
+                     <h4>About Us</h4>
+                      <ul>
+                        <li><a href="#" class="contact-footer-info">comapany name</a></li>
+                        <li><a href="#" class="contact-footer-info">policies</a></li>
+                        <li><a href="#" class="contact-footer-info">Details</a></li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="contact-container">
+                    <div class="footer-col">
+                        <div class="contact-row">
+                         <h4>Follow Us</h4>
+                          <ul>
+                            <div class="social-link">
+                                <img src="../images/index/facebook (1).png" class="img-contact" >&nbsp;&nbsp;
+                                <img src="../images/index/instagram.png" class="img-contact"  >&nbsp;&nbsp;
+                                <img src="../images/index/twitter (1).png" class="img-contact"  >&nbsp;&nbsp;
+                                <img src="../images/index/whatsapp (1).png" class="img-contact"  >&nbsp;&nbsp;
+                            </div>
+                          </ul>
+                        </div>
+                    </div>
+            
+</footer>
 </body>
