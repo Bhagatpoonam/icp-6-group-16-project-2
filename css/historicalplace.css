@@ -99,6 +99,75 @@ body{
 }  
 
 
+
+
+
+
+
+
+.footer-contact{
+    background-color:  #24262b;
+    padding: 70px 0;
+    height:250px;
+}
+.contact-container{
+    max-width: 1170px;
+    margin:auto;
+    display: flex;
+    margin-left:180px ;
+    
+}
+.footer-col{
+    color: white;
+    font-size: 20px;
+
+}
+.contact-row{
+    line-height:27px;
+}
+.contact-footer-info{
+    text-decoration: none;
+    color: #bbbbbb;
+}
+.social-link{
+   line-height: 100px;
+    display: flex;
+}
+.footer-col h4{
+    line-height:50px;
+    text-underline-position: 5px;
+}
+.img-contact{
+    width:30px;
+    height:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 600px){
     .heading{
         font-size: 30px;
