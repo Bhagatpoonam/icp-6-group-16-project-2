@@ -1,0 +1,79 @@
+
+        
+        body{
+            background-color:white;
+            color:black;
+        }
+        .review-container{
+            display:flex;
+                flex-wrap:wrap;
+                justify-content: space-around;
+                padding: 10px 100px;
+
+        }
+        .review-cards{
+
+            margin: 20px;
+            padding: 20px;
+            position: relative;
+        }
+        .heading{
+            color:black;
+            text-align: center;
+            font-size: 50px;
+            padding:20px;
+
+        }
+        .rating{
+            color:black;
+            padding-top:0px;
+            padding-left:30px;
+        }
+       .second-container{
+        display:flex;
+                flex-wrap:wrap;
+                justify-content: space-around;
+                padding: 10px 100px;
+       }    
+       .people-review{
+            background-color: white;
+                width: 250px;
+                height:280px;
+                margin: 20px;
+                padding: 20px;
+                border-radius: 10px;
+                position: relative;
+                border:1px solid grey;
+       }
+      
+       .heading2{
+        text-align: center;
+       }
+       .fivestar{
+                height:70px;
+                align-items: left;
+                position: absolute;
+                top:15px;
+                right: 15px;
+                padding: 0px;
+                padding-left: 10px;
+        }
+        .comment{
+            color:black;
+                font-size: 20px;
+                margin-top:10px;
+                margin-bottom: 10px;
+                padding:25px;
+        }
+        .name{
+                color:black;
+                font-size: 25px;
+                margin-top:10px;
+                font-weight: bold;
+                text-align: center;
+                
+            }
+
+       
+       
+      
