@@ -1,0 +1,342 @@
+body{
+    background-color: #ffe6f3;
+}
+.heading{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+    background-color: #b30059;
+    color: #ffe6f3;
+    padding: 5px;
+    margin: 5px;
+}
+.HistoricalPlacesA-img{
+    height: 320px;
+    width: 450px;
+    padding: 0px;
+    margin: 10px;
+    margin-right: 50%;
+    margin-top: -5%;
+}
+.AboutPlacesA{
+    color: #b30059;
+    margin-left: 40%;
+    margin-top: -20%;
+    font-size: 18px;
+    text-align: justify;
+    padding: 10px;
+}
+.places-container1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%px;
+    background-color: #fff;
+    padding: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+    margin-top: 50px;
+    border-radius: 0px 50px;
+    box-shadow: 1px 1px 2px 2px #b30059;
+}
+.title1{
+    margin-left: 40%;
+    font-size: 30px;
+}
+.places-container2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%px;
+    background-color: #fff;
+    padding: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+    margin-top: 50px;
+    border-radius: 50px 0px;
+    box-shadow: 1px 1px 2px 2px #b30059;
+}
+.HistoricalPlacesB-img{
+    height: 320px;
+    width: 450px;
+    padding: 0px;
+    margin: 10px;
+    margin-left: 65%;
+    margin-top: -5%;
+}
+.AboutPlacesB{
+    color: #b30059;
+    margin-top: -20%;
+    font-size: 18px;
+    margin-right: 40%;
+    text-align: justify;
+    padding: 10px;
+}
+.title2{
+    margin-right: auto;
+    font-size: 30px;
+}
+.footer-contact{
+    background-color:  #24262b;
+    padding: 50px 0;
+    height:150px;
+    margin-top: 20px;
+}
+.contact-container{
+    max-width: 1170px;
+    margin:auto;
+    display: flex;
+    margin-left:180px ;
+}
+.footer-col{
+    color: white;
+    font-size: 20px;
+}
+.contact-row{
+    line-height:27px;
+}  
+
+
+
+
+
+
+
+
+.footer-contact{
+    background-color:  #24262b;
+    padding: 70px 0;
+    height:250px;
+}
+.contact-container{
+    max-width: 1170px;
+    margin:auto;
+    display: flex;
+    margin-left:180px ;
+    
+}
+.footer-col{
+    color: white;
+    font-size: 20px;
+
+}
+.contact-row{
+    line-height:27px;
+}
+.contact-footer-info{
+    text-decoration: none;
+    color: #bbbbbb;
+}
+.social-link{
+   line-height: 100px;
+    display: flex;
+}
+.footer-col h4{
+    line-height:50px;
+    text-underline-position: 5px;
+}
+.img-contact{
+    width:30px;
+    height:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px){
+    .heading{
+        font-size: 30px;
+    }
+    .HistoricalPlacesA-img{
+        height: 220px;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2px;
+    }
+    .AboutPlacesA{
+        font-size: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+        margin-top: 0;
+    }
+    .title1{
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .HistoricalPlacesB-img{
+        height: 220px;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2px;
+    }
+    .AboutPlacesB{
+        font-size: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+        margin-top: 0;
+    }
+    .title2{
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 768px){
+    .heading{
+        font-size: 42px;
+    }
+    .HistoricalPlacesA-img{
+        height: 250px;
+        width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2px;
+    }
+    .AboutPlacesA{
+        font-size: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+        margin-top: 0;
+    }
+    .title1{
+        font-size: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .HistoricalPlacesB-img{
+        height: 250px;
+        width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2px;
+    }
+    .AboutPlacesB{
+        font-size: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+        margin-top: 0;
+    }
+    .title2{
+        font-size: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .heading{
+        font-size: 35px;
+    }
+    .HistoricalPlacesA-img{
+        height: 280px;
+        width: 410px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .AboutPlacesA{
+        font-size: 17px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-top: 0px;
+    }
+    .title1{
+        font-size: 27px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .HistoricalPlacesB-img{
+        height: 280px;
+        width: 410px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .AboutPlacesB{
+        font-size: 17px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0%;
+        margin-top: 0;
+    }
+    .title2{
+        font-size: 27px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    .heading{
+        font-size: 45px;
+    }
+    .HistoricalPlacesA-img{
+        height: 300px;
+        width: 410px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    }
+    .AboutPlacesA{
+        font-size: 17px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-top: 0px;
+    }
+    .title1{
+        font-size: 27px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .HistoricalPlacesB-img{
+        height: 300px;
+        width: 410px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    }
+    .AboutPlacesB{
+        font-size: 17px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0%;
+        margin-top: 0;
+    }
+    .title2{
+        font-size: 27px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
